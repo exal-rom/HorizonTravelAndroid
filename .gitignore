@@ -1,0 +1,70 @@
+
+# ==========================================
+# HorizonTravel Android Application
+# Git ignore configuration
+# ==========================================
+
+# Gradle build outputs and caches
+.gradle/
+**/build/
+.externalNativeBuild/
+.cxx/
+
+# Android build artifacts
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+local.properties
+/captures/
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Signing keys and certificates
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Environment variables and secrets
+.env
+.env.*
+secrets.properties
+keystore.properties
+docs/.obsidian/
+
+# Generated screenshots and reports
+/screenshots/
+/reports/
+/test-results/
+
+# Python cache files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Keep Gradle wrapper files tracked
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
