@@ -25,8 +25,13 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"http://127.0.0.1:58080/api/\"")
+            val backendUrl = providers.gradleProperty("backendUrl")
+                .orElse("http://127.0.0.1:58080/api/")
+                .get()
+
+            buildConfigField("String", "BASE_URL", "\"$backendUrl\"")
         }
+
         release {
             buildConfigField("String", "BASE_URL", "\"https://api.horizontravel.example.com/api/\"")
             optimization {
